@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ZooManagement {
     public static void main(String[] args) {
+        /*
         int nbrCages = 20;
         String zooName = "my zoo";
         Scanner scanner = new Scanner(System.in);
@@ -17,6 +18,10 @@ public class ZooManagement {
         System.out.println(zooName + " comporte " + nbrCages + " cages");
 
         // Fermeture du scanner
-        scanner.close();
+        scanner.close();*/
+        Animal animal1 = new Animal("Famille1","nom1",10,true);
+        Animal[] listeanimal = {animal1};
+        Zoo zoo1 = new Zoo(listeanimal,"nomzoo","nomville",30);
+
     }
 }
