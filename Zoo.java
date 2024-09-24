@@ -14,4 +14,9 @@ public class Zoo {
     public String toString(){
         return(name+" is in "+city+" et contient "+nbrCage+" de cages");
     }
+
+    public boolean addAnimal(Animal animal){
+
+    }
+
 }
