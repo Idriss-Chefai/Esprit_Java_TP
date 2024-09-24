@@ -22,6 +22,7 @@ public class ZooManagement {
         Animal animal1 = new Animal("Famille1","nom1",10,true);
         Animal[] listeanimal = {animal1};
         Zoo zoo1 = new Zoo(listeanimal,"nomzoo","nomville",30);
-
+        System.out.println(zoo1);
+        System.out.println(zoo1.toString());
     }
 }

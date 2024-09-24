@@ -10,4 +10,8 @@ public class Zoo {
         this.city = city;
         this.nbrCage = nbrCage;
     }
+
+    public String toString(){
+        return(name+" is in "+city+" et contient "+nbrCage+" de cages");
+    }
 }
