@@ -16,6 +16,10 @@ public class Animal {
         this.isMammal = isMammal;
     }
 
+    public Animal() {
+
+    }
+
     @Override
     public String toString() {
         return "Famille : " + this.family + " Nom Animal : " + this.name + " Age Animal : " + this.age + " Mammifère : " + this.isMammal;
