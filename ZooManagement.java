@@ -1,28 +1,19 @@
-import java.util.Scanner;
-
 public class ZooManagement {
     public static void main(String[] args) {
-        /*
-        int nbrCages = 20;
-        String zooName = "my zoo";
-        Scanner scanner = new Scanner(System.in);
+        Zoo zoo = new Zoo("Zoo de Tunis", "Tunis", 5); // Exemple avec 5 cages
 
-        // Saisie zooName
-        System.out.println("Donner le nom du zoo");
-        zooName = scanner.nextLine();
+        Animal lion = new Animal("Felidae", "Lion", 5, true);
+        Animal tiger = new Animal("Felidae", "Tiger", 4, true);
+        Animal elephant = new Animal("Elephantidae", "Elephant", 10, false);
 
-        // Saisie nbrCages
-        System.out.println("Donner le nombre de cages");
-        nbrCages = scanner.nextInt();
+        System.out.println(zoo.AjoutAnimal(lion));
+        System.out.println(zoo.AjoutAnimal(tiger));
+        System.out.println(zoo.AjoutAnimal(lion));
+        System.out.println(zoo.AjoutAnimal(elephant));
 
-        System.out.println(zooName + " comporte " + nbrCages + " cages");
+        zoo.AfficherAnimals();
 
-        // Fermeture du scanner
-        scanner.close();*/
-        Animal animal1 = new Animal("Famille1","nom1",10,true);
-        Animal[] listeanimal = {animal1};
-        Zoo zoo1 = new Zoo(listeanimal,"nomzoo","nomville",30);
-        System.out.println(zoo1);
-        System.out.println(zoo1.toString());
+        System.out.println(zoo.RechercheAnimal(lion)); // 0
+        System.out.println(zoo.RechercheAnimal(new Animal("Canidae", "Wolf", 3, true))); // -1
     }
 }
